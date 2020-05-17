@@ -15,7 +15,7 @@ namespace Persistence.Migrations
                     Name = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
-                {
+                { // net framework is convention base, id primary key
                     table.PrimaryKey("PK_Values", x => x.Id);
                 });
         }
